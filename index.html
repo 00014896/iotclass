@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Web Page</title>
+    <style>
+        /* Style for paragraphs */
+        .paragraph {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        /* Style for the button */
+        .button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<p id="humidity" class="paragraph">Humidity: </p>
+<p id="temperature" class="paragraph">Temperature: </p>
+<button id="led" class="button" onclick="press()">Turn On</button>
+
+<!-- Firebase Libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+<!-- Import Firebase Modules -->
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-analytics.js";
+</script>
+
+<!-- Link to JavaScript File -->
+<script type="text/javascript" src="scripts.js"></script>
+
+</body>
+</html>
